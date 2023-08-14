@@ -1,0 +1,10 @@
+nx_cell    = 32
+ny_cell    = 32
+nx_blck    = 3
+ny_blck    = 3
+nguard     = 2
+xmin       = 0.0
+xmax       = 0.0341421
+ymin       = 0.0
+ymax       = 0.0341421
+lrefine    = 4

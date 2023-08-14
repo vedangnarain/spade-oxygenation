@@ -1,0 +1,21 @@
+Config
+{
+    @import(grid)
+    dt         = 0.00000007
+    nt_max     = 100000
+    nt_skip    = 1000
+    ck_skip    = 200000
+    init_file  = none
+    output     = true
+	do_refine  = false
+}
+// Params are in mm and minutes. Solution is normalised by c_ref.
+Param
+{
+    c_diffuse = 0.145
+    kappa     = 13.0
+	xi        = 0.6
+	c_ref     = 0.027679
+	h_ref     = 0.45
+	geom      = vessel-mm.geom
+}
