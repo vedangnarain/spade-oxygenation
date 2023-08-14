@@ -44,8 +44,17 @@ ifeq (${cuda},1)
 cc = ${cc_d}
 flags := ${dflags} -Xcompiler "${hflags}"
 endif
+
+ifndef SPADE
+SPADE := ../spade
+endif
+
+ifndef SCIDF
+SCIDF := ../scidf
+endif
+
 main:
-	${cc} ${flags} -I../scidf/src -I../spade/src main.cc -o ${target}
+	${cc} ${flags} -I${SPADE}/src -I${SCIDF}/src main.cc -o ${target}
 
 run: main
 	./${target}

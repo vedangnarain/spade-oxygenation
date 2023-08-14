@@ -3,6 +3,8 @@
 #include "spade.h"
 #include "vgeom.h"
 
+#include "deprecated/io_deprecated.h"
+
 using real_t = double;
 using flux_t = spade::fluid_state::flux_t<real_t>;
 using prim_t = spade::fluid_state::prim_t<real_t>;
@@ -176,7 +178,7 @@ int main(int argc, char** argv)
             if (group.isroot()) print("Output solution...");
             std::string nstr = spade::utils::zfill(nt, 8);
             std::string filename = "prims"+nstr;
-            if (do_output) spade::io::output_vtk("output", filename, time_int.solution());
+            if (do_output) spade::deprecated::output_vtk("output", filename, time_int.solution());
             if (group.isroot()) print("Done.");
         }
         if (nt%checkpoint_skip == 0)
