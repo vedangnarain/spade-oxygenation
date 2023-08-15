@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<VTKFile type="vtkMultiBlockDataSet" version="1.0">
+    <vtkMultiBlockDataSet>
+        <Block index ="0">
+            <DataSet index="0" file="data_prims00005000/block0000000.vtr"/>
+            <DataSet index="1" file="data_prims00005000/block0000001.vtr"/>
+            <DataSet index="2" file="data_prims00005000/block0000002.vtr"/>
+            <DataSet index="3" file="data_prims00005000/block0000003.vtr"/>
+            <DataSet index="4" file="data_prims00005000/block0000004.vtr"/>
+            <DataSet index="5" file="data_prims00005000/block0000005.vtr"/>
+            <DataSet index="6" file="data_prims00005000/block0000006.vtr"/>
+            <DataSet index="7" file="data_prims00005000/block0000007.vtr"/>
+            <DataSet index="8" file="data_prims00005000/block0000008.vtr"/>
+        </Block>
+    </vtkMultiBlockDataSet>
+</VTKFile>
